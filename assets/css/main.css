@@ -1,6 +1,8 @@
 @charset "UTF-8";
 @import url(font-awesome.min.css);
-@import "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600";
+/* @import "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600"; */
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400,500');
+@import url('https://fonts.googleapis.com/css?family=Arimo');
 
 /*
 	Projection by TEMPLATED
@@ -166,6 +168,10 @@
 
 	@media screen and (max-width: 736px) {
 
+		.box.alt p{
+			font-size: 14px;
+		}
+
 		.container.\31 25\25 {
 			width: 100%;
 			max-width: 112.5%;
@@ -191,6 +197,10 @@
 	}
 
 	@media screen and (max-width: 480px) {
+
+		.box.alt p{
+			font-size: 12px;
+		}
 
 		.container.\31 25\25 {
 			width: 100%;
@@ -1586,10 +1596,14 @@
 
 	body, input, select, textarea {
 		color: #9a9a9a;
-		font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+		font-family: "Oswald", Arial, Helvetica, sans-serif;
 		font-size: 14pt;
 		font-weight: 400;
 		line-height: 1.65;
+	}
+
+	p {
+		font-family: "Arimo", Arial, Helvetica, sans-serif;
 	}
 
 		@media screen and (max-width: 1680px) {
@@ -1977,8 +1991,8 @@
 	label {
 		color: #555;
 		display: block;
-		font-size: 0.9em;
-		font-weight: 600;
+		font-size: 1em;
+		/* font-weight: 600; */
 		margin: 0 0 1em 0;
 	}
 
@@ -3105,7 +3119,7 @@
 		@media screen and (max-width: 980px) {
 
 			#banner {
-				background-attachment: scroll;
+				background-attachment: fixed;
 				padding: 5em 0 4em 0;
 			}
 
@@ -3131,6 +3145,7 @@
 		@media screen and (max-width: 736px) {
 
 			#banner {
+				background-attachment: fixed;
 				padding: 4em 0 3em 0;
 			}
 
@@ -3165,6 +3180,10 @@
 
 		@media screen and (max-width: 480px) {
 
+			#banner {
+				background-attachment: fixed;
+			}
+
 			#banner h1 {
 				font-size: 1.5em;
 			}
@@ -3178,6 +3197,7 @@
 		background: #555;
 		color: #fff;
 		text-align: center;
+		font-family: "Arimo", Arial, Helvetica, sans-serif;
 	}
 
 		#footer h3 {
@@ -3221,3 +3241,7 @@
 			}
 
 		}
+
+		
+
+	
